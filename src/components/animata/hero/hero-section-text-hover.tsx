@@ -1,6 +1,5 @@
 import React from "react";
-import { Map } from "lucide-react";
-
+import Link from "next/link";
 import { cn } from "@/src/lib/utils";
 
 interface ItemProps {
@@ -85,9 +84,11 @@ const HeroSectionTextHover: React.FC<HeroCardProps> = ({ className }) => {
             </div>
           </div>
         </div>
-        <button className="cursor-pointer rounded-3xl bg-zinc-700 px-4 py-2 font-mono tracking-tighter hover:bg-orange-500 mt-4">
-          Begin your journey
-        </button>
+        <Link href="/sign-up">  
+          <button   className="cursor-pointer rounded-3xl bg-zinc-700 px-4 py-2 font-mono tracking-tighter hover:bg-orange-500 mt-4">
+            Begin your journey
+          </button>
+        </Link>
       </div>
     </div>
   );
