@@ -1,17 +1,16 @@
-// "use client";
-
-// import Link from "next/link";
-// import React, { useState } from "react";
-// import { Menu, X, ChevronDown, User } from "lucide-react";
-// // import Logo from "./Logo.tsx";
-// import { Button } from "@/components/ui/button";
-// import {
-//   DropdownMenu,
-//   DropdownMenuTrigger,
-//   DropdownMenuContent,
-//   DropdownMenuItem,
-// } from "@/components/ui/dropdown-menu";
-// import Logo from "./Logo";
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
+import { Menu, X, ChevronDown, User } from "lucide-react";
+// import Logo from "./Logo.tsx";
+import { Button } from "@/src/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/src/components/ui/dropdown-menu";
+import Logo from "./Logo";
 
 // const Nav = () => {
 //   const navLinks = [

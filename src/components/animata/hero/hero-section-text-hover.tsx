@@ -1,8 +1,11 @@
 import React from "react";
+import Link from "next/link";
+import { cn } from "@/src/lib/utils";
 
-const HeroSectionTextHover: React.FC = () => {
-  return (
-    <section className="relative h-screen w-full overflow-hidden">
+interface ItemProps {
+  emoji: string;
+  position: string;
+}
 
       {/* Background Image */}
       <div className="absolute inset-0 bg-[url('/flower.jpg')] bg-cover bg-center hero-zoom"></div>
@@ -32,7 +35,11 @@ const HeroSectionTextHover: React.FC = () => {
             Sign Up
           </button>
         </div>
-
+        <Link href="/sign-up">  
+          <button   className="cursor-pointer rounded-3xl bg-zinc-700 px-4 py-2 font-mono tracking-tighter hover:bg-orange-500 mt-4">
+            Begin your journey
+          </button>
+        </Link>
       </div>
     </section>
   );
