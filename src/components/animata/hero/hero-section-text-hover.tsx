@@ -7,82 +7,33 @@ interface ItemProps {
   position: string;
 }
 
-interface HeroCardProps {
-  destinations?: ItemProps[];
-  treasures?: ItemProps[];
-  className?: string;
-}
+      {/* Background Image */}
+      <div className="absolute inset-0 bg-[url('/flower.jpg')] bg-cover bg-center hero-zoom"></div>
+      
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/65"></div>
 
-const HeroSectionTextHover: React.FC<HeroCardProps> = ({ className }) => {
-  const destinations = [
-    { emoji: "🪂", position: "-left-10 -top-4 group-hover:-translate-y-6" },
-    { emoji: "🏖️", position: "-left-16 top-4 group-hover:-translate-x-6" },
-    { emoji: "🚁", position: "right-0 -top-6 group-hover:-translate-y-6" },
-    { emoji: "🏯", position: "right-[-20px] top-6 group-hover:translate-x-6" },
-  ];
-  const treasures = [
-    { emoji: "📚", position: "-left-12 -top-6 group-hover:-translate-y-6" },
-    { emoji: "☕", position: "-left-16 top-2 group-hover:-translate-x-6" },
-    { emoji: "😌", position: "right-0 -top-6 group-hover:-translate-y-6" },
-    { emoji: "✨", position: "right-10 top-2 group-hover:translate-x-6" },
-  ];
+      {/* Content */}
+      <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-6">
 
-  return (
-    <div
-      className={cn(
-        "storybook-fix py-12å relative min-h-[100px] w-full rounded-2xl  md:min-h-[200px]",
-        className,
-      )}
-    >
-      <div className="mb-2 flex flex-col items-center justify-center gap-3">
-        <div className="flex flex-col items-center justify-center font-bold leading-tight">
-          <div className="flex items-center gap-2 text-4xl sm:text-6xl md:text-7xl">
-            <span className="text-gray-400">FEEL</span>
+        <h1 className="text-white text-4xl sm:text-6xl md:text-7xl font-semibold max-w-4xl leading-tight">
+          Happy Teachers Create Happy Classrooms.
+        </h1>
 
-            <div className="group relative">
-              <span className="text-zinc-500 transition-colors group-hover:text-sky-400">
-                ALIVE
-              </span>
+        <p className="text-gray-200 mt-6 text-lg max-w-2xl">
+          Supporting educator wellbeing through reflection, mindful habits, and daily joy.
+        </p>
 
-              <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                {destinations.map((dest, index) => (
-                  <span
-                    key={index}
-                    className={cn(
-                      "pointer-events-none absolute text-2xl transition-transform duration-500 group-hover:scale-110 md:text-5xl",
-                      dest.position,
-                    )}
-                  >
-                    {dest.emoji}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
+        {/* Buttons */}
+        <div className="mt-10 flex gap-6">
+          <button className="px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:scale-105 transition duration-300">
 
-          <div className="mt-2 flex items-center gap-2 text-4xl sm:text-6xl md:text-7xl whitespace-nowrap">
-            <span className="text-gray-400">WITH</span>
+            Login
+          </button>
 
-            <div className="group relative">
-              <span className="text-zinc-500 transition-colors group-hover:text-orange-500 whitespace-nowrap">
-                CHEER&nbsp;BOARD
-              </span>
-
-              <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                {treasures.map((gem, index) => (
-                  <span
-                    key={index}
-                    className={cn(
-                      "pointer-events-none absolute text-2xl transition-transform duration-500 group-hover:scale-110 md:text-5xl",
-                      gem.position,
-                    )}
-                  >
-                    {gem.emoji}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
+          <button className="px-6 py-3 border border-white text-white rounded-full hover:bg-white/10 transition duration-300">
+            Sign Up
+          </button>
         </div>
         <Link href="/sign-up">  
           <button   className="cursor-pointer rounded-3xl bg-zinc-700 px-4 py-2 font-mono tracking-tighter hover:bg-orange-500 mt-4">
@@ -90,7 +41,7 @@ const HeroSectionTextHover: React.FC<HeroCardProps> = ({ className }) => {
           </button>
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 
