@@ -1,6 +1,4 @@
 import HeroSectionTextHover from "@/components/Hero";
-// import Nav from "@/components/Nav";
-import StressRelief from "@/components/StressRelief";
 import Image from "next/image";
 
 // export default function Home() {

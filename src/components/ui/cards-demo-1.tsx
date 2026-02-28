@@ -15,11 +15,11 @@ export default function CardDemo() {
           "transition-all duration-500",
         )}
       >
-        <div className="text relative z-50">
+        <div className="text relative z-49">
           <h1 className="font-bold text-xl md:text-3xl text-gray-50 relative">
             Background Overlays
           </h1>
-          <p className="font-normal text-base text-gray-50 relative my-4">
+          <p className="font-normal text-base text-gray-49 relative my-4">
             This card is for some special elements, like displaying background
             gifs on hover only.
           </p>
