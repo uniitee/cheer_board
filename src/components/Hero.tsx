@@ -1,11 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { cn } from "@/src/lib/utils";
 
-interface ItemProps {
-  emoji: string;
-  position: string;
-}
+const HeroSectionTextHover  = () => {
+  return (
+    <section className="relative h-screen overflow-hidden">
 
       {/* Background Image */}
       <div className="absolute inset-0 bg-[url('/flower.jpg')] bg-cover bg-center hero-zoom"></div>
@@ -26,20 +24,18 @@ interface ItemProps {
 
         {/* Buttons */}
         <div className="mt-10 flex gap-6">
-          <button className="px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:scale-105 transition duration-300">
+          <Link href="/sign-in">
+            <button className="px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:scale-105 transition duration-300">
+              Login
+            </button>
+          </Link>
 
-            Login
-          </button>
-
+        <Link href="/sign-up">  
           <button className="px-6 py-3 border border-white text-white rounded-full hover:bg-white/10 transition duration-300">
             Sign Up
           </button>
-        </div>
-        <Link href="/sign-up">  
-          <button   className="cursor-pointer rounded-3xl bg-zinc-700 px-4 py-2 font-mono tracking-tighter hover:bg-orange-500 mt-4">
-            Begin your journey
-          </button>
         </Link>
+        </div>
       </div>
     </section>
   );

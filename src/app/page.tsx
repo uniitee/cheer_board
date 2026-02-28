@@ -1,4 +1,4 @@
-import HeroSectionTextHover from "@/components/animata/hero/hero-section-text-hover";
+import HeroSectionTextHover from "@/components/Hero";
 // import Nav from "@/components/Nav";
 import StressRelief from "@/components/StressRelief";
 import Image from "next/image";
