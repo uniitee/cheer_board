@@ -13,9 +13,9 @@ export default function Navbar() {
 
   const links = [
     { name: "Check-In", href: "/dashboard" },
-    { name: "Wellness", href: "/wellness" },
-    { name: "Joy Missions", href: "/missions" },
-    { name: "Analytics", href: "/analytics" },
+    { name: "Wellness", href: "/dashboard/wellness" },
+    { name: "Joy Missions", href: "/dashboard/missions" },
+    { name: "Analytics", href: "/dashboard/analytics" },
   ];
 
   return (
