@@ -24,10 +24,11 @@ const HeroSectionTextHover = () => {
 
         {/* Buttons */}
         <div className="mt-10 flex gap-6">
-          <button className="px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:scale-105 transition duration-300">
-            Login
-          </button>
-
+          <Link href="/sign-in">
+            <button className="px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:scale-105 transition duration-300">
+              Login
+            </button>
+          </Link>
         <Link href="/sign-up">  
           <button className="px-6 py-3 border border-white text-white rounded-full hover:bg-white/10 transition duration-300">
             Sign Up
