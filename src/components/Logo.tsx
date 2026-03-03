@@ -4,7 +4,7 @@ function Logo() {
   return (
     <div className="flex items-center gap-2 mb-4 ml-2.5">
       <Image
-        src="/basil.png"
+        src="/basil.svg"
         alt="Carefield Logo"
         width={32}
         height={32}
