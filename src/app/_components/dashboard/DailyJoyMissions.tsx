@@ -34,7 +34,7 @@ useEffect(() => {
     dailyJoy?: DailyJoyData;
   };
 
-  const saved = metadata.dailyJoy?.[today].completed;
+    const saved = metadata.dailyJoy?.[today]?.completed;
 
   if (saved && saved.length !== completed.length) {
       setCompleted(saved);
@@ -149,7 +149,7 @@ useEffect(() => {
       {completed.length === missions.length && (
         <div className="bg-emerald-500/10 border border-emerald-400/30 p-4 rounded-xl text-emerald-300 text-center animate-pulse">
           🎉 Amazing! You completed all your joy missions today!
-        </div>
+        </div>  
       )}
     </div>
   );
