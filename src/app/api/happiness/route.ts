@@ -11,9 +11,7 @@ const emotionWeights: Record<string, number> = {
   admiration: 0.8,
   approval: 0.7,
   excitement: 0.9,
-
   neutral: 0.5,
-
   sadness: 0,
   anger: 0,
   fear: 0.2,
@@ -24,30 +22,30 @@ const emotionWeights: Record<string, number> = {
 
 function calculateHappiness(predictions: any[]) {
   let score = 0;
-
   predictions.forEach((pred) => {
     const weight = emotionWeights[pred.label] ?? 0.5;
     score += pred.score * weight;
   });
-
   return Math.round(score * 100); // percentage
 }
 
 export async function POST(req: Request) {
   const { text } = await req.json();
-
   try {
     const result = await client.textClassification({
       model: "joeddav/distilbert-base-uncased-go-emotions-student",
       inputs: text,
       provider: "hf-inference",
     });
+    
+    const dominantEmotion = result[0]?.label;
 
     const happinessScore = calculateHappiness(result);
 
     return NextResponse.json({
       emotions: result,
       happiness: happinessScore,
+      dominantEmotion,
     });
   } catch (error) {
     return NextResponse.json({ error: "Model failed" }, { status: 500 });

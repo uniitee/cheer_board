@@ -7,7 +7,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen flex justify-center px-4 h-screen relative flex-col md:flex-row md:overflow-hidden">
+    <div className="min-h-screen flex justify-center px-4 h-full relative flex-col md:flex-row md:overflow-hidden">
       <Navbar
         variant="dashboard"
         links={[
