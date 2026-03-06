@@ -35,10 +35,10 @@ const Features = () => {
       {/* Section Heading */}
       <div className="text-center max-w-2xl mx-auto mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">
-          Boost Your <span className="text-emerald-300">Workday</span>
+          Boost Your <span className="text-blue-300">Workday</span>
         </h1>
         <p className="text-white/70 text-sm md:text-base">
-          Discover tools designed to uplift teachers every day 💚
+          Discover tools designed to uplift teachers every day 🩵
         </p>
       </div>
 

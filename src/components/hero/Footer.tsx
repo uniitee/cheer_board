@@ -4,9 +4,9 @@ import { Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <div id="footer"className="h-18 md:px-16 px-6 flex justify-between items-end text-emerald-300 bg-zinc-900 pb-2">
+    <div id="footer"className="h-18 md:px-16 px-6 flex justify-between items-end text-gray-300 bg-zinc-900 pb-2">
       <div>
-        <h2 className="text-lg font-semibold hidden md:block">
+        <h2 className="text-gray-100 text-lg font-semibold hidden md:block">
           CheerBoard
         </h2>
         <p className="text-sm text-gray-400  hidden md:block">
