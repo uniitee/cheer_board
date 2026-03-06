@@ -1,4 +1,5 @@
 import Features from "@/components/hero/Features";
+import Footer from "@/components/hero/Footer";
 import HeroSectionTextHover from "@/components/hero/Hero";
 import Navbar from "@/components/hero/Navbar";
 import Image from "next/image";
@@ -12,12 +13,13 @@ export default function Home() {
           links={[
             { name: "About", href: "/#about" },
             { name: "Features", href: "/#features" },
-            { name: "Contact", href: "/#contact" },
+            { name: "Contact", href: "/#footer" },
             { name: "Login", href: "/sign-in" },
           ]}
         />
         <HeroSectionTextHover />
         <Features />
+        <Footer />
       </main>
     </div>
   );
