@@ -19,10 +19,10 @@ export default function Footer() {
       </div>
       <div className="items-center justify-center flex flex-col md:flex-row gap-1 md:gap-5">
         <Link href="#">
-          <Linkedin className="cursor-pointer w-4 h-4 md:w-8 md:h-8 text-gray-400 hover:text-blue-500" />
+          <Linkedin className="cursor-pointer w-4 h-4 md:w-8 md:h-8 text-gray-400 hover:text-emerald-600" />
         </Link>
         <Link href="#">
-          <Github className="cursor-pointer w-4 h-4 md:w-8 md:h-8  text-gray-400 hover:text-blue-500" />
+          <Github className="cursor-pointer w-4 h-4 md:w-8 md:h-8  text-gray-400 hover:text-emerald-600" />
         </Link>
       </div>
     </div>
